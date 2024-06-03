@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Taylor's Bakery</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<header>
+</header>
+
+</head>
+
+<body>
+
+
+   <div class="layout">
+      <div class="logonav">
+
+         <div class="logo">
+            <img src="assets/newlogo3.png" alt="Taylor's Bakery logo" width="200" height="200">
+         </div>
+         <div class="nav">
+            <nav>
+               <a href="index.html">Home</a>
+               <a href="/Cakes">Cakes</a>
+               <a href="/Bread and Pasties">Bread and Pasties</a>
+               <a href="/ourstory.html">Our Story</a>
+               <a href="/address.html">Address</a>
+            </nav>
+
+         </div>
+         <div class="audio">
+
+            <audio controls>
+
+
+
+               <source src="assets/04 - Cheap Thrills.mp3" type="audio/mpeg">
+
+
+            </audio>
+         </div>
+      </div>
+
+      <div class="slideshow-container">
+         <div class="mySlides fade">
+
+            <img src="assets/berries.jpeg" alt="Blueberry small pies" width="800x" height="550px">
+
+         </div>
+
+         <div class="mySlides fade">
+
+            <img src="assets/bread.jpeg" alt="Loaf of bread breadcrums around" width="800px" height="550px">
+
+         </div>
+
+         <div class="mySlides fade">
+
+            <img src="assets/coffeeand cake.jpeg" alt="Cup of Americano with chocolate cake" width="800px"
+               height="550px">
+
+         </div>
+
+
+
+         <div class="mySlides fade">
+
+            <img src="assets/plate.jpeg" alt="Plate of pancakes with chocholate on top" width="750px" height="500px">
+
+         </div>
+
+         <div class="mySlides fade">
+
+            <img src="assets/chocblue.jpeg" alt="Blueberry chocholate cake" width="650px" height="550px">
+
+         </div>
+
+
+
+         <div class="mySlides fade">
+
+            <img src="assets/strewberry.jpeg" alt="Strewberry cake with streberries around it" width="700px"
+               height="500px">
+
+         </div>
+
+
+
+         <div class="mySlides fade">
+
+            <img src="assets/cherrycake.jpeg" alt="Chocholate cake with cherries on top" width="700px" height="450px">
+
+         </div>
+
+
+         <div class="mySlides fade">
+
+            <img src="assets/red.jpeg" alt="Raspberry pie" width="600px" height="550px">
+
+         </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+   </div>
+
+
+</body>
+
+
+<script>
+   let slideIndex = 0;
+   showSlides();
+
+   function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+   }
+</script>
+
+</body>
+
+</html>
