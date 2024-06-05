@@ -16,7 +16,7 @@
 
 nav a {
 
-    /*styling the navigation bar*/  
+    /*styling the navigation bar*/
     color: black;
     text-decoration: none;
     margin: 15px;
@@ -29,16 +29,20 @@ nav a {
 
 }
 
+/* styling the navigation bar when its hovered over , changing the button colour the the same brown as in the logo */
+
 nav a:hover {
 
     background-color: #DBB488;
     padding: 5px;
+    /* using border radius to curl the corners of the button */
     border-radius: 15px;
 
 
 }
 
 .layout {
+    
     display: flex;
 
 }
@@ -46,10 +50,9 @@ nav a:hover {
 .logonav {
 
 
-    display: flex;
+    display:inline-block;  /* using inline-block to place the flexboxes next to each other */
     flex-direction: column;
     justify-content: space-between;
-
     padding-top: 5%;
     height: auto;
     align-content: space-between;
@@ -65,6 +68,7 @@ nav a:hover {
     align-items: right;
     margin-left: auto;
     margin-right: auto;
+    /* sizing the width of the container so the page is responsive */
     width: 70%;
     height: auto;
     padding-top: 8%;
