@@ -5,7 +5,9 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Taylor's Bakery</title>
+   <!-- connecting the CSS style sheet -->
    <link rel="stylesheet" href="style.css">
+   <!-- connecting the font used on the landing page  -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
@@ -17,8 +19,9 @@
 
 <body>
 
-
+   <!-- using a layout flexbox to fit the unusual layout   -->
    <div class="layout">
+      <!-- 1 of the 2 columns of the layout including the logo, navigation bar and audio button  -->
       <div class="logonav">
 
          <div class="logo">
@@ -26,6 +29,7 @@
          </div>
          <div class="nav">
             <nav>
+               <!-- using absolute link to get to the righ pages  -->
                <a href="https://ildigreen.github.io/taylersbakery1/index.html">Home</a>
                <a href="Cakes">Cakes</a>
                <a href="Bread and Pasties">Bread and Pasties</a>
@@ -34,6 +38,7 @@
             </nav>
 
          </div>
+         <!-- audio file , removed the aoutplay so user has to click to listen to music  -->
          <div class="audio">
 
             <audio controls>
@@ -46,6 +51,8 @@
             </audio>
          </div>
       </div>
+
+      <!-- using a slideshow container to store images -->
 
       <div class="slideshow-container">
          <div class="mySlides fade">
@@ -66,8 +73,6 @@
                height="550px">
 
          </div>
-
-
 
          <div class="mySlides fade">
 
@@ -111,32 +116,28 @@
 
       </div>
 
-
-
-
-
-
-
    </div>
 
 
 </body>
 
+<!-- Javascript code is inserted between <script> tags -->
 
 <script>
    let slideIndex = 0;
    showSlides();
 
+
    function showSlides() {
       let i;
       let slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
+      for (i = 0; i < slides.length; i++) {        // using a Javascript 'for' loop to make the slideshow work
          slides[i].style.display = "none";
       }
       slideIndex++;
       if (slideIndex > slides.length) { slideIndex = 1 }
       slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 3000); // Change image every 2 seconds
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
    }
 </script>
 
